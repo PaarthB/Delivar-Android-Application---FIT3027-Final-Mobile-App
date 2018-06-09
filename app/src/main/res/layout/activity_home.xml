@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+    <include layout="@layout/activity_toolbar"/>
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/choice"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_below="@+id/choose"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/deliver"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/choose"
+        android:layout_alignTop="@+id/deliver"
+        android:layout_marginStart="52dp"
+        android:text="@string/order"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myOrderFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_deliveries"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_shopping_cart_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myDeliveriesFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myAccountFAB"
+        android:layout_alignStart="@+id/myOrderFAB"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_local_taxi_white_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myAccountFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/myDeliveriesFAB"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+    <TextView
+        android:id="@+id/my_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myOrderFAB"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/myOrderFAB"
+        android:layout_marginStart="5dp"
+        android:text="@string/myOrder"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/my_deliveries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/my_orders"
+        android:layout_alignTop="@+id/myDeliveriesFAB"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="@string/myDeliveries"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/my_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myAccountFAB"
+        android:layout_alignStart="@+id/my_deliveries"
+        android:layout_marginBottom="18dp"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/myAccount" />
+
+    <ImageView
+        android:id="@+id/delivarLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliver"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/rsz_delivar_burned" />
+
+</RelativeLayout>

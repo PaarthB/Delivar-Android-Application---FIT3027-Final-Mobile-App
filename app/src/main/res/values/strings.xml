@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Delivar App. People Helping people</string>
+    <string name="app_registration">Delivar User Registration</string>
+    <string name="app_info">Delivar Application Info</string>
+    <string name="app_tagline">Fast Delivery to your doorstep.</string>
+    <string name="user_login">User Login</string>
+    <string name="user_name">Full Name</string>
+    <string name="update_details">UPDATE EMAIL</string>
+    <string name="create_order">CREATE ORDER</string>
+    <string name="register">REGISTER</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="user_email">Email Address</string>
+    <string name="user_mobile">Mobile Number</string>
+    <string name="current_pw">New Password</string>
+    <string name="new_pw">Confirm Password</string>
+    <string name="name">Name:</string>
+    <string name="welcome">Welcome</string>
+    <string name="tip">Tip</string>
+    <string name="email">Email:</string>
+    <string name="about">INFO</string>
+    <string name="deliver">DELIVER</string>
+    <string name="list_deliver">I\'LL DELIVER</string>
+    <string name="list_cancel_delivery">CANCEL DELIVERY</string>
+    <string name="token_failed">Fail to retrieve client token</string>
+    <string name="order">ORDER</string>
+    <string name="yes">YES</string>
+    <string name="existing">Already have an account? Sign In:</string>
+    <string name="no">NO</string>
+    <string name="credits">CREDITS: </string>
+    <string name="filterOrders">FILTER ORDERS</string>
+    <string name="user_password">Password</string>
+    <string name="password_retype">Retype Password</string>
+    <string name="copyrights">Delivar Inc. 2018, All Rights Reserved</string>
+    <string name="myOrder">My Orders</string>
+    <string name="myDeliveries">My Deliveries</string>
+    <string name="myAccount">My Account Details</string>
+    <string name="change_pw">Change Password</string>
+    <string name="update_pw">UPDATE PASSWORD</string>
+    <string name="choice">I want to:</string>
+    <string name="item">I want:</string>
+    <string name="from">From:</string>
+    <string name="deliverTo">Deliver To:</string>
+    <string name="upload">upload</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="startLoc">Start Location</string>
+    <string name="endLoc">End Location</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="travellingFrom">Travelling From:</string>
+    <string name="destination">Destination:</string>
+    <string name="itemHint">Item Description</string>
+    <string name="exit">exit</string>
+    <string name="deliver_orders">DELIVER ORDERS</string>
+    <string name="app_info_paragraph"><b><font fgcolor='#20000f' size="30">3rd PARTY REFERENCES:</font>\n(Scroll Down till bottom)</b>
+        \n\n<b><font fgcolor='#20000f' size="25">1. API and SDK REFERENCES:</font></b>
+        \n\nThis App has used multiple open-source <b>APIs</b> and <b>SDKs</b> for
+        Android.\n\nThe APIs and SDKs used, are all publicly accessible and available, for an indefinite time period,
+        without any cost or charge.
+        \n\nThe APIs used are listed below:
+        \n1. <b>Google Maps API and Places SDK</b>
+        \n2. <b>Braintree PayPal SDK</b>
+        \n3. <b>Firebase SDK</b>
+        \n4. <b>Glide Image Loading API</b> (<u>bumptech.github.io/glide/</u>)
+        \n\nThe URLs to the <b>License Requirements</b> for each of the above APIs and SDKs are listed below, in their respective order:
+        \n\n1. <u>https://developers.google.com/maps/terms#9-license-requirements</u>
+        \n2. <b>(MIT License)</b> <u>https://github.com/braintree/braintree_android/blob/master/LICENSE</u>
+        \n3. <b>(Apache 2.0 License)</b> <u>https://github.com/firebase/quickstart-android/blob/master/LICENSE</u>
+        \n4. <b>(MIT and Apache 2.0 License)</b> <u>https://github.com/bumptech/glide/blob/master/LICENSE</u>
+        \n\n<b><font fgcolor='#20000f' size="25">2. IMAGE REFERENCES:</font></b>
+        \n\nThe URLs of the images used are listed below:
+        \n\n1. <b>App logo:</b> <u>https://logopond.com/logos/211d9c927ce358e20581c624b74aaae1.png</u>
+        \n2. <b>Home Page logo:</b> <u>https://myonlinesecurity.co.uk/wp-content/uploads/2018/05/express_delivery.jpg</u>
+        \n3. <b>Braintree PayPal Icon:</b> <u>http://fintechnews.sg/wp-content/uploads/2016/06/braintreepayments-1440x564_c.png</u>
+        \n4. All the <b>other smaller icons</b> have been taken from the Materials Design wesbite
+        <u>https://material.io/tools/icons</u>\n\n
+    </string>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl5"
+    tools:context=".AccountDetailsActivity">
+
+    <include layout="@layout/activity_toolbar"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_top"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameDetail"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="17dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="@string/credits" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="32dp"
+        android:text="@string/email"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/emailDetail"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emailDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_marginStart="19dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/email"
+        android:ems="10"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/updateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailDetail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FF00"
+        android:text="@string/update_details" />
+
+    <TextView
+        android:id="@+id/changePW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/updateEmail"
+        android:layout_marginTop="57dp"
+        android:text="@string/change_pw"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/oldPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/changePW"
+        android:layout_below="@+id/changePW"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="@string/current_pw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/newPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/oldPW"
+        android:layout_below="@+id/oldPW"
+        android:layout_marginTop="26dp"
+        android:hint="@string/new_pw"
+        android:textStyle="italic"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/updatePW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPW"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#00F0FF"
+        android:text="@string/update_pw" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/changePW"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

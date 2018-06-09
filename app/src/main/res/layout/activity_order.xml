@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/deliveryAddress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/paymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/braintreeImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/create_order"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/paymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tip"
+        android:layout_toEndOf="@+id/i_want"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/braintreeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="PAYPAL Image"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rsz_2rsz_paypal_burned" />
+
+    <TextView
+        android:id="@+id/i_want"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/braintreeImage"
+        android:layout_below="@+id/toolbar_top"
+        android:layout_marginTop="39dp"
+        android:text="@string/item"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/paymentAmount"
+        android:layout_below="@+id/toolbar_top"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/itemHint"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/i_want"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="23dp"
+        android:text="@string/from"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/itemLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/from"
+        android:layout_below="@+id/from"
+        android:layout_toStartOf="@+id/places"
+        android:hint="Item Location" />
+
+    <ImageView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="Map GPS Location"
+        app:srcCompat="@drawable/rsz_places" />
+
+    <TextView
+        android:id="@+id/deliverTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/itemLocation"
+        android:layout_below="@+id/itemLocation"
+        android:layout_marginTop="27dp"
+        android:text="@string/deliverTo"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/deliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deliverTo"
+        android:layout_below="@+id/deliverTo"
+        android:layout_toStartOf="@+id/places2"
+        android:hint="Delivery Address" />
+
+    <ImageView
+        android:id="@+id/places2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deliveryAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="Map GPS Location"
+        app:srcCompat="@drawable/rsz_places" />
+
+    <EditText
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/paymentButton"
+        android:layout_alignStart="@+id/paymentAmount"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/tip"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/poweredByGoogleB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/places2"
+        android:layout_alignBottom="@+id/progressBar1"
+        android:layout_alignEnd="@+id/braintreeImage"
+        app:srcCompat="@drawable/powered_by_google_light" />
+
+</RelativeLayout>
