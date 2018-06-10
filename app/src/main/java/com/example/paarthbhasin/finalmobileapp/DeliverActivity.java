@@ -68,7 +68,13 @@ import java.util.ArrayList;
  *
  * The idea of the implementation of AutoCompleteTextView with PlacesArrayAdapter has been taken
  * and modified from the following URL:
- * http://www.truiton.com/2015/04/android-places-api-autocomplete-getplacebyid/
+ *      - http://www.truiton.com/2015/04/android-places-api-autocomplete-getplacebyid/
+ *
+ * To build the URL for querying Google Maps Directions API, and parsing the JSON response the following
+ * StackOverflow links were referenced:
+ *      - https://stackoverflow.com/questions/21154758/how-to-draw-path-between-2-points-on-google-map
+ *      - https://stackoverflow.com/questions/40562312/android-google-maps-draw-a-path-between-two-points
+ *      - https://stackoverflow.com/questions/32810495/google-direction-route-from-current-location-to-known-location
  */
 
 
@@ -254,6 +260,9 @@ public class DeliverActivity extends AppCompatActivity implements View.OnClickLi
     // Builds the Google Maps Direction URL, that is used to query Google Maps for getting path
     // between two locations. That is, if you call this URL, you get a JSON response from Google, containing
     // the journey from 'origin' to 'dest'
+    // This was taken from the following StackOverflow links:
+    // https://stackoverflow.com/questions/40562312/android-google-maps-draw-a-path-between-two-points
+
     private String getMapsApiDirectionsUrl(LatLng origin, LatLng dest) {
         // Origin of route
         String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
@@ -361,7 +370,11 @@ public class DeliverActivity extends AppCompatActivity implements View.OnClickLi
 
         // Method that determines if "location" points lie on the path "journey"
         // Location points are item source and destination address. To return true, both source and
-        // destination should lie on the journey path
+        // destination should lie on the journey path.
+        // This was taken from the following StackOverflow links:
+        // https://stackoverflow.com/questions/32810495/google-direction-route-from-current-location-to-known-location
+        // https://stackoverflow.com/questions/21154758/how-to-draw-path-between-2-points-on-google-map
+
         private boolean intersect(JSONObject journey, LatLng... location) {
             boolean startPresent = false; // Whether order can be picked
             boolean endPresent = false; // Whether order can be delivered
